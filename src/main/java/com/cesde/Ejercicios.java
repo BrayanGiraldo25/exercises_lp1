@@ -16,7 +16,14 @@ public class Ejercicios {
      */
     public String ejercicio1(int num1, int num2) {
         // Implementar solución
-        return "";
+        if(num1>num2) {
+            return "El número mayor es: num1";
+        } else if (num2>num1) {
+            return "El número mayor es: num2";
+        }
+        else {
+            return "Los dos números son iguales.";
+        }
     }
     // ----------------------------------------------------------------------------------------
 
@@ -33,7 +40,15 @@ public class Ejercicios {
      */
     public String ejercicio2(double calificacion) {
        // Implementar solución
-        return "";
+      if (calificacion >=3.5){
+        return "¡Felicidades! Usted ha aprobado el examen.";
+      }
+      else if(calificacion <3.5) {
+        return "Lo siento, usted ha reprobado el examen.";
+      }
+      else {
+        return "numero invalido";
+      }
     }
 
     // ----------------------------------------------------------------------------------------
@@ -48,9 +63,12 @@ public class Ejercicios {
      * @return El método devuelve el precio final después de aplicar un descuento
      *         basado en el precio de entrada.           
      */
-    public double ejercicio3(double precio) {
-        // Implementar solución
-        return 0;
+    public double ejercicio3(double precio){ 
+        if (precio >=50000.00){
+            System.out.println("el descuento esta bien colocado");
+        } else if (precio < 50000.00) {
+            System.out.println("el descuento esta desbalanceado");
+        }
     }
 
     // ----------------------------------------------------------------------------------------
